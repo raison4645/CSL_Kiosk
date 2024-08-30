@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="index.css">
+<script src="index.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Kiosk</title>
+</head>
+<body id="body">
+    <div class="logo_container">
+        <img alt="" class="csl_logo" src="public/images/main_logo.png"/>
+    </div>
+    <div class="main_container">
+        <section class="options">
+            <div class="desc">
+                <p>我係AI Specialist Aisha,</p>
+                <p>我可以為你講解</p>
+                <p>各種熱門AI工具，</p>
+                <p>即刻揀你想學識邊一款啦！</p>
+            </div>
+            <div class="topic">
+                <button id="toLastTopic" onclick="onTopicChange"></button>
+                <p id="topic_text"></p>
+                <button id="toNextTopic" onclick="onTopicChange"></button>
+            </div>
+            <div class="detail">
+                <button id="toLastDetail" onclick="onDetailChange"></button>
+                <p id="detail_text"></p>
+                <button id="toNextDetail" onclick="onDetailChange"></button>
+            </div>
+            <span id="play_btn"></span>
+        </section>
+        <section class="img_container">
+            <img alt="" class="ai_model" src="public/images/addional-09.png" />
+        </section>
+    </div>
+    <div class="caution">
+        <span>以上操作畫面僅供參考。一切請以產品實際操作為準。</span>
+    </div>
+    <div id="video_modal">
+        <button onclick="window.location.reload()">
+            <img class="home_icon" alt="" src="public/images/home_btn.png"/>
+        </button>
+        <video id="short_video" loop>
+            <source src="public/videos/A1.mp4" type="video/mp4">
+        </video>
+
+    </div>
+</body>
+</html>
